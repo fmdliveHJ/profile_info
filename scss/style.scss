@@ -206,6 +206,7 @@ main {
             transform: translate(-50%, 0%);
             opacity: 0;
             font-size: 3rem;
+            text-align: center;
 
             &.active {
               opacity: 1;
@@ -220,6 +221,7 @@ main {
             transform: translate(-50%, -50%);
             opacity: 0;
             font-size: 3rem;
+            text-align: center;
 
             &.active {
               opacity: 1;
@@ -896,6 +898,93 @@ main {
 
 @media screen and (max-width:$mini) {
   main {
+    /*visual*/
+    .visual {
+      .left_box {
+        .text_box {
+          p {
+            font-size: 5rem;
+          }
+
+          span {
+            font-size: 1.5rem;
+
+          }
+        }
+      }
+
+      .right_box {
+        .text_box {
+          p {
+            font-size: 5rem;
+
+            .dot {
+              span {
+                margin-top: 10px;
+                font-size: 0.7rem;
+              }
+            }
+          }
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .start_txt {
+        font-size: 2rem;
+      }
+
+      .ending_txt {
+        font-size: 2rem;
+      }
+
+
+      &.on {
+
+        .left_box {
+          &::after {
+            opacity: 1;
+            transform: translateX(0);
+          }
+
+          p,
+          span {
+            transition: all 2s 0.3s;
+            transform: translate3d(0, 0px, 0);
+            opacity: 1
+          }
+        }
+
+        .right_box {
+          &::after {
+            opacity: 1;
+            transform: translateX(0);
+          }
+
+          p,
+          span {
+            transition: all 2s 0.3s;
+            transform: translate3d(0, 0px, 0);
+            opacity: 1
+          }
+
+          p .dot {
+            transform: scale(1);
+            opacity: 1;
+
+            span {
+              opacity: 1;
+            }
+
+          }
+
+        }
+      }
+
+    }
+
   /*skill*/
   .skill {
     margin: 50px 0;
@@ -935,6 +1024,7 @@ main {
   /*project*/
   .project {
     padding: 50px;
+    .inner {
 
     .project-list {
       ul li {
@@ -972,11 +1062,101 @@ main {
       }
     }
   }
-
+}
 }
 }
 @media screen and (max-width:$mobile) {
   main {
+    .visual {
+      .left_box {
+        .text_box {
+          p {
+            font-size: 3rem;
+          }
+
+          span {
+            font-size: 1rem;
+
+          }
+        }
+      }
+
+      .right_box {
+        .text_box {
+          p {
+            font-size: 3rem;
+
+            .dot {
+              right: -5px;
+              width: 7px;
+              height: 7px;
+              ;
+
+              span {
+                margin-top: 10px;
+                font-size: 0.5rem;
+              }
+            }
+          }
+
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .start_txt {
+        font-size: 2rem;
+      }
+
+      .ending_txt {
+        font-size: 2rem;
+      }
+
+
+      &.on {
+
+        .left_box {
+          &::after {
+            opacity: 1;
+            transform: translateX(0);
+          }
+
+          p,
+          span {
+            transition: all 2s 0.3s;
+            transform: translate3d(0, 0px, 0);
+            opacity: 1
+          }
+        }
+
+        .right_box {
+          &::after {
+            opacity: 1;
+            transform: translateX(0);
+          }
+
+          p,
+          span {
+            transition: all 2s 0.3s;
+            transform: translate3d(0, 0px, 0);
+            opacity: 1
+          }
+
+          p .dot {
+            transform: scale(1);
+            opacity: 1;
+
+            span {
+              opacity: 1;
+            }
+
+          }
+
+        }
+      }
+
+    }
   /*about*/
   .about {
     padding: 20px;
