@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정현진 포트폴리오</title>
+  <meta name="description" content="">
+  <meta property="og:site_name" content="">
+  <meta name="keywords" content="">
+  <meta property="og:image" content="">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script type="text/javascript">
+    /*! modernizr 3.6.0 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-cssanimations-csspositionsticky-csstransforms-csstransitions-setclasses !*/
+    !function (e, n, t) { function r(e, n) { return typeof e === n } function s() { var e, n, t, s, o, i, a; for (var l in w) if (w.hasOwnProperty(l)) { if (e = [], n = w[l], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length)) for (t = 0; t < n.options.aliases.length; t++)e.push(n.options.aliases[t].toLowerCase()); for (s = r(n.fn, "function") ? n.fn() : n.fn, o = 0; o < e.length; o++)i = e[o], a = i.split("."), 1 === a.length ? Modernizr[a[0]] = s : (!Modernizr[a[0]] || Modernizr[a[0]] instanceof Boolean || (Modernizr[a[0]] = new Boolean(Modernizr[a[0]])), Modernizr[a[0]][a[1]] = s), C.push((s ? "" : "no-") + a.join("-")) } } function o(e) { var n = _.className, t = Modernizr._config.classPrefix || ""; if (x && (n = n.baseVal), Modernizr._config.enableJSClass) { var r = new RegExp("(^|\\s)" + t + "no-js(\\s|$)"); n = n.replace(r, "$1" + t + "js$2") } Modernizr._config.enableClasses && (n += " " + t + e.join(" " + t), x ? _.className.baseVal = n : _.className = n) } function i() { return "function" != typeof n.createElement ? n.createElement(arguments[0]) : x ? n.createElementNS.call(n, "http://www.w3.org/2000/svg", arguments[0]) : n.createElement.apply(n, arguments) } function a(e, n) { return function () { return e.apply(n, arguments) } } function l(e, n, t) { var s; for (var o in e) if (e[o] in n) return t === !1 ? e[o] : (s = n[e[o]], r(s, "function") ? a(s, t || n) : s); return !1 } function f(e, n) { return !!~("" + e).indexOf(n) } function u(e) { return e.replace(/([a-z])-([a-z])/g, function (e, n, t) { return n + t.toUpperCase() }).replace(/^-/, "") } function c(e) { return e.replace(/([A-Z])/g, function (e, n) { return "-" + n.toLowerCase() }).replace(/^ms-/, "-ms-") } function d(n, t, r) { var s; if ("getComputedStyle" in e) { s = getComputedStyle.call(e, n, t); var o = e.console; if (null !== s) r && (s = s.getPropertyValue(r)); else if (o) { var i = o.error ? "error" : "log"; o[i].call(o, "getComputedStyle returning null, its possible modernizr test results are inaccurate") } } else s = !t && n.currentStyle && n.currentStyle[r]; return s } function p() { var e = n.body; return e || (e = i(x ? "svg" : "body"), e.fake = !0), e } function m(e, t, r, s) { var o, a, l, f, u = "modernizr", c = i("div"), d = p(); if (parseInt(r, 10)) for (; r--;)l = i("div"), l.id = s ? s[r] : u + (r + 1), c.appendChild(l); return o = i("style"), o.type = "text/css", o.id = "s" + u, (d.fake ? d : c).appendChild(o), d.appendChild(c), o.styleSheet ? o.styleSheet.cssText = e : o.appendChild(n.createTextNode(e)), c.id = u, d.fake && (d.style.background = "", d.style.overflow = "hidden", f = _.style.overflow, _.style.overflow = "hidden", _.appendChild(d)), a = t(c, e), d.fake ? (d.parentNode.removeChild(d), _.style.overflow = f, _.offsetHeight) : c.parentNode.removeChild(c), !!a } function y(n, r) { var s = n.length; if ("CSS" in e && "supports" in e.CSS) { for (; s--;)if (e.CSS.supports(c(n[s]), r)) return !0; return !1 } if ("CSSSupportsRule" in e) { for (var o = []; s--;)o.push("(" + c(n[s]) + ":" + r + ")"); return o = o.join(" or "), m("@supports (" + o + ") { #modernizr { position: absolute; } }", function (e) { return "absolute" == d(e, null, "position") }) } return t } function g(e, n, s, o) { function a() { c && (delete N.style, delete N.modElem) } if (o = r(o, "undefined") ? !1 : o, !r(s, "undefined")) { var l = y(e, s); if (!r(l, "undefined")) return l } for (var c, d, p, m, g, v = ["modernizr", "tspan", "samp"]; !N.style && v.length;)c = !0, N.modElem = i(v.shift()), N.style = N.modElem.style; for (p = e.length, d = 0; p > d; d++)if (m = e[d], g = N.style[m], f(m, "-") && (m = u(m)), N.style[m] !== t) { if (o || r(s, "undefined")) return a(), "pfx" == n ? m : !0; try { N.style[m] = s } catch (h) { } if (N.style[m] != g) return a(), "pfx" == n ? m : !0 } return a(), !1 } function v(e, n, t, s, o) { var i = e.charAt(0).toUpperCase() + e.slice(1), a = (e + " " + T.join(i + " ") + i).split(" "); return r(n, "string") || r(n, "undefined") ? g(a, n, s, o) : (a = (e + " " + z.join(i + " ") + i).split(" "), l(a, n, t)) } function h(e, n, r) { return v(e, t, t, n, r) } var C = [], w = [], S = { _version: "3.6.0", _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 }, _q: [], on: function (e, n) { var t = this; setTimeout(function () { n(t[e]) }, 0) }, addTest: function (e, n, t) { w.push({ name: e, fn: n, options: t }) }, addAsyncTest: function (e) { w.push({ name: null, fn: e }) } }, Modernizr = function () { }; Modernizr.prototype = S, Modernizr = new Modernizr; var _ = n.documentElement, x = "svg" === _.nodeName.toLowerCase(), b = S._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""]; S._prefixes = b, Modernizr.addTest("csspositionsticky", function () { var e = "position:", n = "sticky", t = i("a"), r = t.style; return r.cssText = e + b.join(n + ";" + e).slice(0, -e.length), -1 !== r.position.indexOf(n) }); var P = "Moz O ms Webkit", T = S._config.usePrefixes ? P.split(" ") : []; S._cssomPrefixes = T; var z = S._config.usePrefixes ? P.toLowerCase().split(" ") : []; S._domPrefixes = z; var E = { elem: i("modernizr") }; Modernizr._q.push(function () { delete E.elem }); var N = { style: E.elem.style }; Modernizr._q.unshift(function () { delete N.style }), S.testAllProps = v, S.testAllProps = h, Modernizr.addTest("cssanimations", h("animationName", "a", !0)), Modernizr.addTest("csstransforms", function () { return -1 === navigator.userAgent.indexOf("Android 2.") && h("transform", "scale(1)", !0) }), Modernizr.addTest("csstransitions", h("transition", "all", !0)), s(), o(C), delete S.addTest, delete S.addAsyncTest; for (var k = 0; k < Modernizr._q.length; k++)Modernizr._q[k](); e.Modernizr = Modernizr }(window, document);
+  </script>
+
+  <!-- js -->
+  <script src="https://kit.fontawesome.com/72031614b9.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <!-- <script src="js/modernizr.js"></script> -->
+  <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <h1>
+          <a href="#none" class="left-box"></a>
+          <a href="#none" class="right-text">JHJ Portfolio</a>
+        </h1>
+
+        <a href="#none" class="contact-link">gdalove@naver.com</a>
+      </div>
+    </header>
+    <!--// header -->
+    <main>
+      <div class="visual section">
+        <div class="left_box">
+          <div class="text_box">
+            <p>PORT</p>
+            <span>Jung Hy</span>
+          </div>
+        </div>
+        <div class="right_box">
+          <div class="text_box">
+            <p>FOLIO <a href="#about" class="dot"><span>Click</span></a></p>
+            <span>eon Jin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about section" id="about">
+        <div class="inner">
+          <h2>01 / ABOUT</h2>
+          <div>
+            <div class="text-area">
+              <div class="desc">
+                <p>안녕하세요!</p>
+                <p>저는 깔끔한 UI와 <br> 특별한 UX를 만드는 <br>웹 퍼블리셔 정현진 입니다.</p>
+              </div>
+              <div class="about-text">
+                <p> 긍정적 사고로 끊임없이 노력합니다.<br>
+                  웹퍼블리셔 3년 동안 변화하는 웹 트렌드에 뒤쳐지지 않으려 새로운 것을 찾고 탐구 합니다.
+                  <br><br>
+                  css와 javascript의 동적모션 구현하는것을 좋아하고, <br>
+                  모듈화를 시켜서 공통으로 작업하는 것에 관심이 많습니다.
+                  <br>
+                  최신 기술 및 문법을 익히기 위해서 <br>
+                  es6, react등의 javascript 프레임워크도 공부 하고 있습니다.
+                  <br><br>
+                  어제보다 나은 제 모습을 상상하며 좋아하는 일을 잘하고자 하는것 <br>
+                  제가 꿈꾸는 미래의 저의 모습입니다.
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <div>
+                    <a a href="mailto:gdalove@naver.com"><i class="fas fa-envelope"></i>gdalove@naver.com</a>
+                    <a href="tel:01047250335"><i class="fas fas fa-mobile-alt"></i>01047250335</a>
+                    <a href="https://github.com/fmdliveHJ?tab=repositories" target="_blank"><i
+                        class="fab fab fa-git-alt"></i>git</a>
+                    <a href="#none"><i class="fas fa-id-card"></i>자개소개서</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="img-con">
+              <p><img src="" alt=""></p>
+              <p><img src="" alt=""></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// about  -->
+      <div class="skill section">
+        <div class="inner">
+          <h2>02 / SKILL</h2>
+          <div class="html">
+            <div class="con">
+              <img src="./images/dummy.png" alt="">
+              <p class="text1">기업이 전달하고픈 Brand Identity를 시각적으로 정립하여 소비자와 커뮤니케이션</p>
+              <p class="text2">
+                브랜드의 핵심가치와 추구하는 방향을 명확히 표현하여 세분화된 일정관리와 기획부터
+              </p>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="title">HTML</li>
+                <li>웹 표준</li>
+                <li>웹 접근성</li>
+                <li>시멘틱 태그</li>
+              </ul>
+              <ul>
+                <li class="title">CSS</li>
+                <li>animation</li>
+                <li>scss</li>
+              </ul>
+              <ul>
+                <li class="title">JAVASCRIPT</li>
+                <li>ES5, ES6</li>
+                <li>REACT</li>
+                <li>THREE.JS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// SKILL -->
+
+      <div class="project section">
+        <h2>03 / PROJECT</h2>
+        <div class="project-list">
+          <ul>
+            <li class="nudie">
+              <div class="img-con">
+                <img src="./images/nudie.png" alt="">
+              </div>
+              <div class="text-con">
+                <span>반응형 웹, vanila script</span>
+                <h3>NUDIE JEANS</h3>
+                <p>
+                  청바지 브랜딩 사이트 누디진입니다. Jqeury의 비율이 높던 것을 vanila스크립트로 작업 하였습니다. <br>
+                  각페이지마다 스크롤 모션을 주었으며, flickr api, 유투브 api를 데이터로 가져오도록 하였습니다. <br>
+                  location페이지에선 카카오 map api를 활용하였으며 무한 배너 스크롤링도 적용하였습니다.
+                </p>
+                <a href="https://fmdlivehj.github.io/portfolio-business/index.html" target="_blank"
+                  class="view"><span>View
+                    Site</span></a>
+                <a href="./images/nudie_coding_guide.pdf" class="down" download="">작업설명서 다운로드</a>
+              </div>
+            </li>
+            <li class="jeep">
+              <div class="img-con">
+                <img src="./images/jeep.png" alt="">
+              </div>
+              <div class="text-con">
+                <span>REACT, REDUX</span>
+                <h3>JEEP</h3>
+                <p>
+                  REACT를 사용하여 작업하였습니다. 컴포넌트를 분리시켜 효율적으로 관리하기 위해 redux-saga를 기반으로 만들었습니다. 컨텐츠 이미지를 많이 가져오는 섹션에서는 json을
+                  이용했으며, flickr, youtube기반의 api를 데이터를 불러오도록 하였습니다. location에서는 kakao map api도 사용하였습니다.
+                </p>
+                <a href="https://fmdlivehj.github.io/jeep_portfolio" target="_blank" class="view"><span>View
+                    Site</span></a>
+                <a href="./images/jeep_coding_guide.pdf" class="down" download="">작업설명서 다운로드</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--// project-list  -->
+      </div>
+      <!--// project  -->
+    </main>
+    <!--//main  -->
+  </div>
+  <!--// wrap -->
+
+
+</body>
+
+</html>

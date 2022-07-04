@@ -1,0 +1,191 @@
+* {
+  max-height: 1000000px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  background: #fff;
+  color: #222;
+  font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', Apple Gothic, arial, helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+  word-wrap: break-word;
+  word-break: keep-all;
+  white-space: normal;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
+body.hid {
+  overflow: hidden;
+}
+
+img,
+fieldset,
+button {
+  border: none;
+  font-family: 'Noto Sans KR';
+}
+
+hr
+
+/*, button img*/
+  {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner {
+  padding: 0;
+  border: 0 none
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  vertical-align: top;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+textarea {
+  overflow: auto;
+  word-break: keep-all;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
+
+table img {
+  vertical-align: top;
+}
+
+th,
+td {
+  vertical-align: middle;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+legend {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+/* For Screen Reader */
+
+caption {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+em {
+  font-style: normal;
+}
+
+.blind {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+  border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.hid {
+  overflow: hidden;
+}
+
+.br-m {
+  display: none;
+}
+
+$tablet : 1200px;
+$mini: 900px;
+$mobile: 539px;
+
+
+@media screen and (max-width:990px) {
+  .br-m {
+    display: block;
+  }
+}
