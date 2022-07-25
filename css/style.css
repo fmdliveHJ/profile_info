@@ -526,7 +526,7 @@ main .about .inner .text-area ul li div:last-child {
 
 main .about .inner .img-con p {
   width: 350px;
-  height: 350px;
+  height: 450px;
   background: #000;
   transform: translateY(60%);
   transition: 0.5s linear;
@@ -875,7 +875,6 @@ main .project.on .project-list {
   }
   main .about .inner .img-con p {
     width: 50%;
-    height: 350px;
     background: #000;
   }
   main .about .inner .img-con p:last-child {
@@ -1127,7 +1126,6 @@ main .project.on .project-list {
   }
   main .about .inner .img-con p {
     width: 100%;
-    height: 350px;
     background: #000;
   }
   main .about .inner .img-con p:last-child {

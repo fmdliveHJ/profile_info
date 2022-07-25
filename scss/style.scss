@@ -360,7 +360,7 @@ main {
 
       .img-con p {
         width: 350px;
-        height: 350px;
+        height: 450px;
         background: #000;
         transform: translateY(60%);
         transition: 0.5s linear;
@@ -779,7 +779,6 @@ main {
 
         p {
           width: 50%;
-          height: 350px;
           background: #000;
 
           &:last-child {
@@ -1115,7 +1114,6 @@ main {
 
 
       &.on {
-
         .left_box {
           &::after {
             opacity: 1;
@@ -1169,7 +1167,6 @@ main {
 
         p {
           width: 100%;
-          height: 350px;
           background: #000;
 
           &:last-child {
