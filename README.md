@@ -2,8 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="./images/index.png
-  ">
+  <img src="./images/readme/index.png">
   <br>
 </p>
 
